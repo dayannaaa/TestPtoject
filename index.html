@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>News Articles</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>News Articles</h1>
+    <div class="search">
+        <div>
+            <input type="text" placeholder="Enter word">
+            <span class="bottom"></span>
+            <span class="right"></span>
+            <span class="top"></span>
+            <span class="left"></span>
+          </div>
+          
+        <button onclick="searchArticles()">Search</button>
+    </div>
+    <div class="sort">
+        <label for="sortSelect">Sort by:</label>
+        <select id="sortSelect" onchange="sortArticles()">
+            <option value="publishedAt">Published At</option>
+            <option value="title">Title</option>
+        </select>
+
+    </div class = "container">
+    <div  id="articlesList">
+    </div>
+    <a href="#top" id="totop">▲</a>
+    <script src="script.js"></script>
+</body>
+</html>
